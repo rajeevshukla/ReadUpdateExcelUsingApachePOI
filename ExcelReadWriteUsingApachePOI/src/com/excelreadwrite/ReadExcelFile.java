@@ -44,10 +44,10 @@ public class ReadExcelFile {
 				Cell cell = (Cell) cellIterator.next();
 				//checking cell type
 				 switch (cell.getCellType()) {
-				case Cell.CELL_TYPE_STRING:
+				case STRING:
 					System.out.println("row - column("+rowCount+"-"+cellCount+") has(String) :"+cell.getStringCellValue());
 					break;
-				case Cell.CELL_TYPE_NUMERIC :
+				case NUMERIC :
 					System.out.println("row - column("+rowCount+"-"+cellCount+") has(Numeric) :"+cell.getNumericCellValue());
 					break;
 				default:
